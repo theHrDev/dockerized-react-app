@@ -1,0 +1,47 @@
+# Ignore local dependency folders (install them fresh inside the container instead)
+node_modules/
+jspm_packages/
+.pnp
+.pnp.js
+
+# Ignore development build outputs, caches, and test coverage
+dist/
+build/
+.next/
+.nuxt/
+out/
+coverage/
+.npm
+__pycache__/
+*.pyc
+
+# Ignore local secret configurations (CRITICAL for security)
+.env
+.env*.local
+*.pem
+*.key
+.aws/
+.gcloud/
+
+# Ignore version control files and local developer logs
+.git
+.gitignore
+.hg
+.svn
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore OS metadata and IDE workspace settings
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+
+# Exclude the docker configuration itself
+Dockerfile
+.dockerignore
